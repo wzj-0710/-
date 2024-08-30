@@ -1,0 +1,462 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?bstsiv');
+    src: url('fonts/icomoon.eot?bstsiv#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?bstsiv') format('truetype'),
+        url('fonts/icomoon.woff?bstsiv') format('woff'),
+        url('fonts/icomoon.svg?bstsiv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* logo */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfiX:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    height: 3000px;
+    background-color: #f3f5f7;
+}
+
+/* 导航栏1开始 */
+.nav0 {
+    height: 41px;
+    background-color: #fcfcfc;
+    border-top: 3px solid #ff8500;
+    border-bottom: 1px solid #edeef0;
+    line-height: 41px;
+}
+
+.nav0 ul {
+    margin-left: 300px;
+}
+
+
+.nav0 a {
+    float: left;
+    height: 41px;
+    font-size: 12px;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #4c4c4c
+}
+
+.nav0 a:hover {
+    background-color: #ff8500;
+    color: #edeef0;
+}
+
+/* 导航栏一结束 */
+
+/* 搜索栏 */
+.search {
+    height: 80px;
+}
+
+.search .logo {
+    float: left;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.search .logo img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+#mgnify {
+    float: left;
+    font-size: 14px;
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 500px;
+    height: 40px;
+    border: 0 none;
+    outline: 0;
+    background: rgb(223, 221, 221);
+    color: #222226;
+    vertical-align: top;
+    text-indent: 16px;
+    border: 1px solid #e8e8ed;
+}
+
+#mgnifylogo {
+    float: left;
+    margin-top: 21px;
+    width: 40px;
+    height: 40px;
+    border: 0 none;
+    background: url(https://g.csdnimg.cn/common/csdn-toolbar/images/csdn-white-search.png) no-repeat center center yellowgreen;
+    background-size: 70%;
+}
+
+/* 搜索栏结束 */
+
+
+/* 滚动图片 */
+.banner {
+    height: 421px;
+    background-color: yellowgreen;
+}
+
+.banner .w {
+    height: 421px;
+}
+
+.banner .w img {
+    width: 100%;
+    height: 421px;
+}
+
+/* 导航栏背景颜色大小控制 */
+
+.nav1 {
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.nav1 ul .last {
+    margin-right: 0px;
+}
+
+.nav1 ul {
+    margin-top: 20px;
+
+}
+
+.nav1 ul li {
+    float: left;
+    margin-right: 150px;
+    background-color: yellowgreen;
+    border-radius: 29px;
+
+}
+
+.nav1 ul li:hover {
+    background-color: rgb(79, 194, 79);
+}
+
+.nav1 ul li a {
+    display: inline-block;
+    width: 120px;
+    height: 58px;
+    text-align: center;
+    line-height: 48px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.book a {
+    display: block;
+    background-color: rgb(120, 180, 30);
+    color: white;
+    width: 200px;
+    height: 40px;
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 30px;
+}
+
+.book a:hover {
+    background-color: orange;
+}
+
+.book h2 {
+    font: 700 40px/1.5em arial, verdana;
+    text-align: center;
+    color: #ff8500;
+    margin-bottom: 5px;
+}
+
+/* 推荐书籍 */
+
+.superbox {
+    margin: auto;
+    height: 1440px;
+    width: 1500px;
+}
+
+.bigbox1 {
+    float: left;
+    margin-left: 30px;
+    width: 230px;
+    height: 1400px;
+    border: 1px solid transparent;
+    margin-top: 10px;
+}
+
+.bigbox3 {
+    float: left;
+    margin-top: 50px;
+    width: 230px;
+    height: 400px;
+}
+
+.bigbox3 table tr td {
+    height: 50px;
+    width: 230px;
+    padding-left: 15px;
+    font-size: 16px;
+    border: 1px solid rgb(120, 180, 30);
+
+}
+
+.bigbox3 table tr td a {
+    color: black;
+    line-height: 50px;
+}
+
+.bigbox3 table tr th {
+    text-align: center;
+    height: 50px;
+    width: 230px;
+    padding-left: 15px;
+    font-size: 16px;
+    border: 1px solid rgb(120, 180, 30);
+    color: rgb(79, 194, 79);
+}
+
+.bigbox3 table tr td span {
+    float: right;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.bigbox2 {
+    float: left;
+    height: 1440px;
+}
+
+.bigbox2 h1 {
+    font: 700 40px/1.5em arial, verdana;
+    margin-bottom: auto;
+    margin-top: 10px;
+    text-align: center;
+    color: #ff8500;
+}
+
+.bigbox2 ul {
+    margin-left: 75px;
+}
+
+.bigbox2 ul li {
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+}
+
+.picbox {
+    display: inline-block;
+    width: 298px;
+    height: 415px;
+    background-color: #fff;
+    margin: 10px 5px;
+
+}
+
+.picbox img {
+    width: 100%;
+    height: 200px;
+}
+
+.review {
+    height: 70px;
+    font-size: 14px;
+    padding: 0 28px;
+    margin-top: 30px;
+}
+
+.apprise {
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-top: 20px;
+    padding: 0 28px;
+}
+
+.info {
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 28px;
+}
+
+.info h4 {
+    display: inline-block;
+    font-weight: 400px;
+}
+
+.info a {
+    text-decoration: none;
+    color: black;
+}
+
+.info a:hover {
+    background-color: #b0b0b0
+}
+
+.info span {
+    color: #ff6700
+}
+
+.info em {
+    font-style: normal;
+    color: #ebe4e0;
+    margin: 0 6px 0 2px;
+}
+
+/* hotgoods开始 */
+.hotgoods {
+    height: 50px;
+    line-height: 50px;
+    background-color: greenyellow;
+
+}
+
+.hotgoods h3 {
+    float: left;
+    font-size: 16px;
+    font-style: italic;
+    color: black;
+}
+
+.hotgoods h3 span {
+    float: left;
+    margin-right: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.hotgoods .all {
+    float: right;
+    font-size: 10px;
+    color: gray;
+}
+
+/* hotgoods结束 */
+
+/* hotboxs开始 */
+
+.hotboxs {
+    height: 280px;
+
+}
+
+.hotboxs table {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-top: 3px solid gray;
+}
+
+.hotboxs table tr td img {
+    height: 270px;
+    width: 238px;
+}
+
+.hotboxs table:hover {
+    border-top-color: green;
+}
+
+
+/* hotboxs结束 */
+
+/* footer开始 */
+.footer {
+    height: 415px;
+    background-color: rgb(79, 194, 79);
+}
+
+.footer {
+    padding-top: 35px;
+}
+
+.footer .copyright {
+    float: left;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0;
+}
+
+.copyright img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.copyright .app {
+    width: 118px;
+    height: 33px;
+    border: 3px solid greenyellow;
+    text-align: center;
+    line-height: 33px;
+    font-size: 16px;
+    color: green;
+}
+
+.footer .links {
+    float: right;
+}
+
+.footer .links dl {
+    float: left;
+    margin-left: 110px;
+}
+
+.footer .links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.footer .links dl dd a {
+    font-size: 12px;
+    color: #333;
+}
+
+span {
+    font-family: 'icomoon';
+}
+
+/* footer结束 */

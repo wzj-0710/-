@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+</head>
+
+<body>
+    <h4>青春不常在，抓紧谈恋爱，要想学习恋爱两不误，快来注册此网站</h4>
+
+    <table width="800">
+        <form action="xxx.php" method="GET" autocapitalize="on">
+            <!--第一行-->
+            <tr>
+                <td>用户名</td>
+                <td>
+                    <input type="text" placeholder="请输入用户信息" autofocus="autofocus" reuqired="required">
+                </td>
+            </tr>
+            <!--第二行-->
+            <tr>
+                <td>上传头像</td>
+                <td>
+                    <img src="images/头像标志2.jpg" width="25"> <input type="file">
+                </td>
+            </tr>
+            <!--第三行-->
+            <tr>
+                <td>用户密码</td>
+                <td>
+                    <input type="password" maxlength="10" placeholder="请输入您的密码" required="required">
+                </td>
+            </tr>
+            <!--第四行-->
+            <tr>
+                <td>确认密码</td>
+                <td>
+                    <input type="password" maxlength="10" placeholder="请再次输入您的密码" required="required">
+                </td>
+            </tr>
+            <tr>
+                <!--第五行-->
+            <tr>
+                <td>手机号码</td>
+                <td>
+                    <input type="text" pattern="[0-9]{11}" placeholder="请输入手机号码"> <input type="button" value="获取手机验证码">
+                </td>
+            </tr>
+            <!--第六行-->
+            <tr>
+                <td>E-mail</td>
+                <td>
+                    <input type="email" placeholder="请输入用户邮箱" reuqired="required">
+                </td>
+            </tr>
+            <!--第七行-->
+            <tr>
+                <td>性别:</td>
+                <td>
+                    <input type="radio" name="sex" id="nan"><label for="nan"> <img src="images/man.jpg">男 </label>
+                    <input type="radio" name="sex" id="nv"><label for="nv"><img src="images/women.jpg">女</label>
+                </td>
+            </tr>
+            <!--第八行-->
+            <tr>
+                <td>生日：</td>
+                <td> <input type="date" reuqired="required"> </td>
+            </tr>
+            <!--第九行-->
+            <tr>
+                <td>
+                    所在学校：
+                </td>
+                <td>
+                    <input type="text" placeholder="请输入所在院校" reuqired="required">
+                </td>
+            </tr>
+            <!--第十行-->
+            <tr>
+                <td>
+                    所处年级：
+                </td>
+                <td>
+                    <input type="radio" name="class">大一
+                    <input type="radio" name="class">大二
+                    <input type="radio" name="class">大三
+                    <input type="radio" name="class">大四
+                    <input type="radio" name="class">研一
+                    <input type="radio" name="class">研二
+                </td>
+            </tr>
+            <!--第十一行-->
+            <tr>
+                <td>
+                    学历：
+                </td>
+                <td>
+                    <input type="text" list="edulist" reuiqred="reuiqred" />
+                    <datalist id="edulist">
+                        <option label="高中" value="高中"></option>
+                        <option label=“本科 value="本科"></option>
+                        <option label="研究生" value="研究生"></option>
+                        <option label="博士" value="博士"></option>
+                        <option label="博士后" value="博士后"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <!--第十二行-->
+            <tr>
+                <td>
+                    喜欢的书籍类型：
+                </td>
+                <td>
+                    <input type="radio">言情小说
+                    <input type="radio">传记
+                    <input type="radio">报纸杂志
+                    <input type="radio">漫画
+                    <input type="radio">侦探小说
+                    <input type="radio">科幻小说
+                    <input type="radio">财经类书籍
+                    <input type="radio">武侠小说
+                    <input type="radio">时装杂志
+                    <input type="radio">历史书籍
+                    <input type="radio">教科书
+                </td>
+            </tr>
+            <!--第十三行-->
+            <tr>
+                <td>
+                    喜欢的类型：
+                </td>
+                <td>
+                    <input type="checkbox" name="love">小鲜肉
+                    <input type="checkbox" name="love">大叔
+                    <input type="checkbox" name="love">阳光男孩
+                    <input type="checkbox" name="love">直男
+                    <input type="checkbox" name="love">暖男
+                    <input type="checkbox" name="love">热血
+                    <input type="checkbox" name="love">渣男
+                    <input type="checkbox" name="love">有趣的灵魂
+                    <input type="checkbox" name="love">萝莉
+                    <input type="checkbox" name="love">优雅
+                    <input type="checkbox" name="love">浪漫
+                    <input type="checkbox" name="love">古典
+                    <input type="checkbox" name="love">清纯
+                    <input type="checkbox" name="love">时髦
+                    <input type="checkbox" name="love">cosplay
+                    <input type="checkbox" name="love">jk
+                    <input type="checkbox" name="love">二次元
+                </td>
+            </tr>
+            <!--第十四行-->
+            <tr>
+                <td>
+                    个人介绍：
+                </td>
+                <td>
+                    <textarea>个人介绍 </textarea>
+                </td>
+            </tr>
+            <!--第十五行-->
+            <tr>
+                <td></td>
+                <td><input type="submit" value="用户注册"> <input type="reset" value="重置"></td>
+            </tr>
+
+            <!--第十六行-->
+            <tr>
+                <td></td>
+                <td><input type="checkbox" check="checked">我同意注册条款和会员加入标准</td>
+            </tr>
+            <!--第十七行-->
+            <tr>
+                <td></td>
+                <td><a href="#">已注册，立刻登入</a></td>
+            </tr>
+            <!--第十八行-->
+            <tr>
+                <td></td>
+                <td>
+                    <h4> <input type="checkbox" checked="checked">承诺</h4>
+                    <ul>
+                        <li>年满18岁、单身</li>
+                        <li>向往交友，秉持良好的交流</li>
+                        <li>积极向上，不随意破坏书籍</li>
+                    </ul>
+
+                </td>
+            </tr>
+        </form>
+    </table>
+    <a href="index.html">返回</a>
+
+</body>
+
+</html>

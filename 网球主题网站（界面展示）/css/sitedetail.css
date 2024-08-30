@@ -1,0 +1,530 @@
+.detail-hd {
+    height: 405px;
+}
+
+/* 场地基本信息模块制作开始 */
+.sitebaseinfor {
+    float: left;
+    width: 800px;
+    height: 100%;
+}
+
+.detail-hd dl {
+    float: left;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.detail-hd dt {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    width: 88px;
+    margin-bottom: 20px;
+
+}
+
+.detail-hd dd {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.sitename {
+    color: black;
+    font-size: 24px;
+    text-align: left;
+}
+
+.siteinfor {
+    font-size: 16px;
+    text-align: left;
+    color: black;
+    margin-bottom: 14px;
+}
+
+.siteprice {
+    margin-top: 25px;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+.siteprice .spantext1 {
+    color: yellowgreen;
+}
+
+.siteprice .spanprice1 {
+    color: yellowgreen;
+    font-size: 30px;
+}
+
+.siteprice .spantext2 {
+    color: yellowgreen;
+    font-size: 20px;
+    padding-left: 1px;
+}
+
+.sitenotice {
+    text-align: left;
+    font-size: 16px;
+    color: black;
+}
+
+/* 打分爱心模块制作开始 */
+.sitecontact {
+    float: left;
+    width: 150px;
+}
+
+.sitecontact .comment {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.comment .love {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 1px;
+}
+
+.comment-num {
+    font-size: 12px;
+    color: #6666;
+}
+
+.comment-score {
+    font-size: 12px;
+    color: #4f6dcf;
+}
+
+/* 打分爱心模块制作结束 */
+
+/* 场地基本信息模块制作结束 */
+
+/* 场地定位模块制作开始 */
+.sitelocation {
+    float: right;
+    width: 400px;
+    height: 100%;
+    border: #ccc solid 1px;
+}
+
+/* 场地定位模块制作结束 */
+/* 场地功能导航制作start */
+.sitenav {
+    height: 50px;
+    margin-top: 20px;
+}
+
+.sitenav ul li {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.sitenav ul li a {
+    padding: 0 25px;
+    color: black;
+}
+
+.sitenav ul li:hover {
+    border-bottom: 2px solid green;
+}
+
+.sitenav ul li:hover a {
+    color: yellowgreen;
+}
+
+/* 场地功能导航制作end */
+
+/* 场地日期制作start */
+.siteseat {
+    height: 550px;
+    margin: 0 auto;
+}
+
+.sitedate {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.sitedate span {
+    float: left;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.sitedate ul {
+    float: left;
+    margin-left: 20px;
+}
+
+.sitedate ul li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.sitedate ul li a {
+    height: 30px;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: yellowgreen;
+}
+
+.sitedate ul li:hover a {
+    color: white;
+    background-color: yellowgreen;
+}
+
+/* 场地日期制作end */
+/* 场地选择模块制作开始 */
+/* 场地时间表制作开始 */
+.left-time-site {
+    float: left;
+    width: 50px;
+    height: 541px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.left-time-site ul {
+    margin-top: 28px;
+}
+
+.left-time-site ul li {
+    width: 30px;
+    height: 36px;
+    padding-left: 5px;
+}
+
+/* 场地时间表制作结束 */
+/* 场地选时间模块制作开始 */
+.mainsitebook {
+    float: right;
+    width: 1120px;
+    height: 487px;
+    margin-top: 15px;
+    border: 1px solid #e6e6e6;
+
+}
+
+.mainbookdetail {
+    float: left;
+    width: 800px;
+    height: 487px;
+    background-color: #f3f3f3;
+}
+
+.mainbookdetail .main-table {
+    height: 100%;
+    margin-left: 8px;
+}
+
+.main-table tr {
+    width: 120px;
+    height: 28px;
+}
+
+.main-table .heads {
+    width: 70px;
+    height: 28px;
+}
+
+.heads span {
+    width: 56px;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #222222;
+    overflow: hidden;
+    padding: 8px 0px 8px 12px;
+}
+
+.main-table-body {
+    width: 120px;
+    height: 457.6px;
+}
+
+.main-table-body .rows {
+    width: 120px;
+    height: 36px;
+}
+
+.main-table-body .single {
+    width: 56px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main-table-body .single span {
+    display: inline-block;
+    width: 56px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.main-table-body .single .can-not-order {
+    background-color: #aaaaaa;
+}
+
+.main-table-body .single .can-order {
+    background-color: white;
+    border: 1px solid #aaaaaa;
+}
+
+.main-table-body .single .can-order:hover {
+    background-color: yellowgreen;
+}
+
+
+/* 场地选时间模块制作结束 */
+/* 右侧场地确认栏制作开始 */
+.rightorderplan {
+    float: right;
+    width: 318px;
+    height: 425px;
+}
+
+.title {
+    height: 31px;
+    width: 90%;
+    margin: 0 auto;
+    color: #222222;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.title ul {
+    border-bottom: 1px solid #e6e6e6;
+    float: left;
+
+}
+
+.title ul li {
+    display: inline-block;
+    height: 31px;
+    padding: 0 5px 0 0px;
+    /* 文字与图片对其 */
+    vertical-align: middle;
+}
+
+.title ul li span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.can-order {
+    border: 1px solid #aaaaaa;
+    background-color: white;
+}
+
+li .can-not-order {
+    border: 1px solid #aaaaaa;
+    background-color: #aaaaaa;
+}
+
+li .chosen {
+    border: 1px solid yellowgreen;
+    background-color: yellowgreen;
+}
+
+.info {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.info dl {
+    height: 20px;
+    line-height: 20px;
+}
+
+.info dd {
+    font-size: 14px;
+    color: #222222;
+    text-align: left;
+
+}
+
+.info dt {
+    float: left;
+    width: 50px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.selected-book {
+    margin-top: 50px;
+}
+
+.selected-book li {
+    margin: 5px 5px;
+    border: 1px solid #aaaaaa;
+    width: 246px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #222222;
+}
+
+.court-display {
+    float: left;
+    margin-top: 50px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #222222;
+}
+
+.court-display span {
+    color: yellowgreen;
+    padding: 0 5px;
+}
+
+.price-display {
+    float: left;
+    margin: 20px;
+    font-size: 18px;
+    color: #222222;
+    /* 清除浮动 */
+    clear: both;
+}
+
+.price-display .money {
+    color: yellowgreen;
+    padding: 0px 15px 0px 5px;
+}
+
+.price-display .extra {
+    font-size: 10px;
+    color: #666666;
+}
+
+.submit-button {
+    display: block;
+    width: 230px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    clear: both;
+}
+
+/* 右侧场地确认栏制作结束*/
+/* 场地选择模块制作结束 */
+
+/* 场馆介绍栏目制作开始 */
+.siteintroduce {
+    height: 38px;
+    margin-top: 10px;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.siteintroduce ul li {
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 3px solid yellowgreen;
+}
+
+/* 场馆介绍栏目制作结束 */
+
+/* 场地信息表格制作开始 */
+.sitetables {
+    height: 500px;
+    margin-top: 10px;
+}
+
+.table1 {
+    width: 810px;
+    height: 80px;
+    text-indent: 4em;
+}
+
+.table2 {
+    width: 810px;
+    height: 120px;
+    text-indent: 4em;
+    margin-top: 40px;
+}
+
+.table3 {
+    width: 810px;
+    height: 200px;
+    text-indent: 4em;
+    margin-top: 40px;
+}
+
+td {
+    color: black;
+    font-size: 14px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.line1 {
+    width: 146px;
+    border-right: 1px solid #cccccc;
+}
+
+.r1 {
+    font-size: 14px;
+    color: black;
+    background-color: #cccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+/* 场地信息表格制作结束 */
+
+/* 场地图片模块制作开始 */
+.siteimages {
+    width: 810px;
+    height: 430px;
+    margin: 30px auto 0;
+}
+
+.left-image {
+    float: left;
+    width: 600px;
+}
+
+.left-image img {
+    width: 604px;
+    height: 423px;
+}
+
+.right-image {
+    float: right;
+    width: 200px;
+}
+
+.right-image li {
+    margin-top: 8px;
+}
+
+.right-image img {
+    width: 187px;
+    height: 131px;
+}
+
+/* 场地图片模块制作结束 */

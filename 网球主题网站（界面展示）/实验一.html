@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            position: relative;
+            width: 400px;
+            border-bottom: 1px solid greenyellow;
+            margin: 100px auto;
+        }
+
+        .box input {
+            width: 370px;
+            height: 30px;
+            border: 0;
+            outline: none;
+        }
+
+        .box img {
+            width: 24px;
+            position: absolute;
+            right: 2px;
+            top: 2px;
+        }
+
+        .box1 {
+            margin-left: 200px;
+            position: relative;
+
+        }
+
+        .box1 .closebtn {
+            position: absolute;
+            left: -10px;
+            top: -5px;
+            cursor: pointer;
+        }
+
+        .box2 {
+            margin-top: 30px;
+            margin-left: 500px;
+            height: 400px;
+            width: 400px;
+            background-color: pink;
+        }
+
+        .box2 ul li {
+            float: left;
+            width: 24px;
+            height: 24px;
+            background-color: yellowgreen;
+            margin: 10px 10px;
+            background: url(images/sprite.png) no-repeat;
+            background-position: 0 -44px;
+        }
+
+        /* input {
+            height: 30px;
+            width: 200px;
+            color: gray;
+            outline: none;
+        } */
+
+        .message {
+            display: inline-block;
+            font-size: 12px;
+            color: #999;
+            background: url(images/mess.png) no-repeat left center;
+            padding-left: 20px;
+        }
+
+        .wrong {
+            color: red;
+            background-image: url(images/wrong.png);
+        }
+
+        .right {
+            color: green;
+            background-image: url(images/right.png);
+        }
+
+        /* li {
+            width: 100px;
+            height: 30px;
+            border: 1px solid green;
+        } */
+        .baidu {
+            margin: 50px auto;
+        }
+
+        .baidu li {
+            float: left;
+        }
+
+        .baidu li img {
+            width: 250px;
+            height: 200px;
+        }
+
+        /* table {
+            width: 800px;
+            border-collapse: collapse;
+            margin: 100px auto;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        thead th {
+            font-weight: bold;
+            background-color: skyblue;
+
+        }
+
+        tbody tr {
+            height: 30px;
+            font-size: 14px;
+            line-height: 30px;
+            text-align: center;
+            color: blue;
+        }
+
+        .bg {
+            background-color: pink;
+        } */
+
+        /* body {
+            background-image: url(images/1.jpg);
+        } */
+        /* .table1 {
+            width: 500px;
+            border-collapse: collapse;
+            margin: 100px auto;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid gray;
+        }
+
+        .table1 th {
+            background-color: skyblue;
+            color: white;
+            height: 50px;
+        }
+
+        .table1 tr {
+            height: 50px;
+        } */
+
+        .tab {
+            width: 978px;
+            margin: 100px auto;
+        }
+
+        .tab_list {
+            height: 39px;
+            border-bottom: #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab_list li {
+            float: left;
+            height: 39px;
+            line-height: 39px;
+            padding: 0 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .tab_list .current {
+            background-color: #c81623;
+            color: #fff;
+        }
+
+        .nav {
+            margin: 100px;
+        }
+
+        .nav a {
+            display: block;
+            width: 60px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav>li>a:hover {
+            background-color: #eee;
+        }
+
+        .nav>li {
+
+            float: left;
+            width: 60px;
+            height: 30px;
+        }
+
+        .nav ul {
+            display: none;
+            width: 100%;
+            border-left: 1px solid yellow;
+            border-right: 1px solid yellow;
+        }
+
+        .nav ul li {
+            border-bottom: 1px solid yellow;
+        }
+
+        .nav ul li a:hover {
+            background-color: yellowgreen;
+        }
+
+        textarea {
+            margin-left: 100px;
+        }
+
+        /* 
+        li {
+            margin-left: 100px;
+            margin-bottom: 10px;
+            width: 300px;
+            height: 30px;
+            background-color: pink;
+        } */
+
+        /* a {
+            float: right;
+        } */
+
+        table {
+            border: 1px solid skyblue;
+            border-collapse: collapse;
+            margin-left: 100px;
+        }
+
+
+        table thead th {
+            width: 100px;
+            height: 30px;
+            background-color: gray;
+            border: 1px solid skyblue;
+        }
+
+        td {
+            width: 100px;
+            height: 30px;
+            background-color: yellowgreen;
+            text-align: center;
+            border: 1px solid skyblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div class="box">
+        <label for="">
+            <img src="images/close.png" alt="" id='eye'>
+            <input type="password" name="" id="pwd">
+        </label>
+    </div> -->
+    <!-- 隐藏显示密码案例 -->
+    <!-- <script>
+        var eye = document.getElementById('eye');
+        var pwd = document.getElementById('pwd');
+        var flag = 0;
+        eye.onclick = function () {
+            if (flag == 0) {
+                eye.scr = 'images/open.png';
+                pwd.type = 'text';
+                flag = 1;
+            } else {
+                eye.src = "images/close.png";
+                pwd.type = 'password';
+                flag = 0;
+
+            }
+
+        }
+    </script> -->
+    <!-- 关掉淘宝二维码 -->
+    <!-- <div class="box1">
+        <img src="images/tao.png" alt="">
+        <div class="closebtn">X</div>
+    </div> -->
+    <!-- <script>
+        var box1 = document.querySelector('.box1');
+        var closebtn = document.querySelector('.closebtn');
+        closebtn.onclick = function () {
+            box1.style.display = 'none';
+        }
+    </script> -->
+
+    <!-- 精灵图循环 -->
+    <!-- <div class="box2">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div> -->
+    <!-- <script>
+        //获取所有小li
+        var lis = document.querySelectorAll('li');
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].style.backgroundPosition = '0 ' + -44 * i + 'px';
+        }
+    </script> -->
+
+    <!-- 显示隐藏文本框内容 -->
+    <!-- <input type="text" value='请输入内容'> -->
+    <!-- <script>
+        var inp = document.querySelector('input');
+        inp.onfocus = function () {
+            if (this.value === '请输入内容') {
+                this.value = '';
+            }
+            this.style.color = '#333';
+        }
+        inp.onblur = function () {
+            if (this.value === '') {
+                this.value = '请输入内容'
+            }
+            this.style.color = "#999";
+        }
+    </script>  -->
+    <!-- 密码框验证信息 -->
+    <!-- <div class="register">
+        <input type="password" class='ipt'>
+        <p class="message">请输入6-16位密码</p>
+    </div>
+    <script>
+        var input = document.querySelector('input');
+        var message = document.querySelector('.message');
+        input.onblur = function () {
+            if (this.value.length < 6 || this.value.length > 16) {
+                message.className = 'message wrong';
+                message.innerHTML = '您输入的位数错误，要求6-16位之间'
+            } else {
+                message.className = 'message right';
+                message.innerHTML = '您输入的格式正确';
+            }
+
+        }
+    </script> -->
+    <!-- 换背景颜色 -->
+    <!-- <button id='btn'>开关灯</button> -->
+    <!-- <script>
+        var btn = document.getElementById('btn');
+        var flag = 0;
+        btn.onclick = function () {
+            if (flag == 0) {
+                document.body.style.backgroundColor = 'black';
+                flag = 1;
+            } else {
+                document.body.style.backgroundColor = 'white';
+                flag = 0;
+            }
+        }
+    </script> -->
+    <!-- 下拉菜单 -->
+    <!-- <ul id='ul2'>
+        <ul>
+            <li id="li1">计算机语言↓</li>
+        </ul>
+        <ul id='ul1'>
+
+            <li>Java</li>
+            <li>C语言</li>
+            <li>python</li>
+        </ul>
+    </ul>
+    <script>
+        var li1 = document.getElementById('li1');
+        var ul1 = document.getElementById('ul1');
+        var ul2 = document.getElementById('ul2');
+        ul2.onmouseover = function () {
+            ul1.style.display = 'block';
+        }
+        ul2.onmouseout = function () {
+            ul1.style.display = 'none';
+        }
+
+
+    </script> -->
+
+    <!-- 彩色灯 -->
+    <!-- <button id='btn'>开关灯</button>
+    <script>
+        var btn = document.getElementById('btn');
+        var flag = 0;
+        btn.onclick = function () {
+            if (flag == 0) {
+                document.body.style.backgroundColor = 'black';
+                flag = 1;
+            } else if (flag == 1) {
+                document.body.style.backgroundColor = 'white';
+                flag = 2;
+            }
+            else if (flag == 2) {
+                document.body.style.backgroundColor = 'skyblue';
+                flag = 3;
+            } else if (flag == 3) {
+                document.body.style.backgroundColor = 'pink';
+                flag = 4;
+            } else if (flag == 4) {
+                document.body.style.backgroundColor = 'yellow';
+                flag = 5;
+            } else {
+                document.body.style.backgroundColor = 'orange';
+                flag = 0;
+            }
+
+        }
+    </script> -->
+
+    <!-- 排他思想案例 -->
+    <!-- <button>按钮</button>
+    <button>按钮</button>
+    <button>按钮</button>
+    <button>按钮</button>
+    <button>按钮</button>
+    <script>
+        var btns = document.getElementsByTagName('button');
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.backgroundColor = '';
+                }
+                this.style.backgroundColor = 'green';
+
+            }
+        }
+    </script> -->
+
+    <!-- 百度换肤效果 -->
+    <!-- <ul class="baidu">
+        <li><img src="images/1.jpg" alt=""> </li>
+        <li><img src="images/2.jpg" alt=""></li>
+        <li><img src="images/3.jpg" alt=""></li>
+        <li><img src="images/4.jpg" alt=""></li>
+
+    </ul>
+    <script>
+        var imgs = document.querySelector('.baidu').querySelectorAll('img');
+        var baidu = document.querySelector('baidu');
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function () {
+                document.body.style.backgroundImage = 'url(' + this.src + ')';
+            }
+        }
+    </script> -->
+
+    <!-- 百度换肤效果2 -->
+    <!-- <ul class="baidu">
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/2.jpg" alt=""></li>
+        <li><img src="images/3.jpg" alt=""></li>
+        <li><img src="images/4.jpg" alt=""></li>
+    </ul>
+    <script>
+        var imgs = document.querySelector('.baidu').querySelectorAll('img');
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function () {
+                document.body.style.backgroundImage = 'url(' + this.src + ')'
+            }
+        }
+    </script> -->
+
+    <!-- 证券表 -->
+    <!-- <table>
+        <thead id="thead">
+            <tr>
+                <th>代码</th>
+                <th>名称</th>
+                <th>最新公布净值</th>
+                <th>累计净值</th>
+                <th>前单位净值</th>
+                <th>净值增长率</th>
+            </tr>
+
+        </thead>
+        <tbody id='tbody'>
+            <tr>
+                <td>003526</td>
+                <td>农银金德3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金德3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金德3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金德3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金德3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金德3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+            <tr>
+                <td>003526</td>
+                <td>农银金德3个月定期开放债券</td>
+                <td>1.075</td>
+                <td>1.079</td>
+                <td>1.074</td>
+                <td>+0.047%</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var trs = document.getElementById('tbody').getElementsByTagName('tr');
+        for (var i = 0; i < trs.length; i++) {
+            trs[i].onmousemove = function () {
+                this.className = 'bg';
+            }
+            trs[i].onmouseout = function () {
+                this.className = '';
+            }
+        } 
+    </script>-->
+
+    <!-- 表单全选取消全选 -->
+    <!-- <table class='table1' border="1">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id='all'></th>
+                <th>商品</th>
+                <th>价钱</th>
+            </tr>
+        </thead>
+        <tbody id='tbody'>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>iPhone8</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>iPad Pro</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>iPad Air</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Apple Watch</td>
+                <td>2000</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var all = document.getElementById('all');
+        var checks = document.getElementById("tbody").getElementsByTagName('input');
+        all.onclick = function () {
+            for (var i = 0; i < checks.length; i++) {
+                checks[i].checked = this.checked;
+            }
+        }
+        for (var i = 0; i < checks.length; i++) {
+            checks[i].onclick = function () {
+                var flag = true;
+                for (var i = 0; i < checks.length; i++) {
+                    if (!checks[i].checked) {
+                        flag = false;
+                    }
+                }
+                all.checked = flag;
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+        var all = document.getElementById('all');
+        var checks = document.querySelector('tbody').getElementsByTagName('input');
+        all.onclick = function () {
+            for (var i = 0; i < checks.length; i++) {
+                checks[i].checked = this.checked;
+            }
+        }
+        for (var i = 0; i < checks.length; i++) {
+            checks[i].onclick = function () {
+                var flag = true;
+                for (var i = 0; i < checks.length; i++) {
+                    if (!checks[i].checked) {
+                        flag = false;
+                    }
+                }
+                all.checked = flag;
+            }
+        }
+    </script> -->
+
+    <!-- tab切换栏属性 -->
+    <div class="tab">
+        <div class="tab_list">
+            <ul>
+                <li class='current'>商品介绍</li>
+                <li>规格与包装</li>
+                <li>售后保障</li>
+                <li>商品评价</li>
+                <li>手机社区</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="item">商品介绍</div>
+            <div class="item">规格与包装</div>
+            <div class="item">售后保障</div>
+            <div class="item">商品评价</div>
+            <div class="item">手机社区</div>
+        </div>
+    </div>
+    <script>
+        var lis = document.querySelector('.tab_list').querySelectorAll('li');
+        var items = document.querySelector('.content').querySelectorAll('.item');
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].setAttribute('index', i);
+            lis[i].onclick = function () {
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = '';
+                    items[i].style.display = 'none';
+                }
+                var index = this.getAttribute('index');
+                this.className = 'current';
+                items[index].style.display = 'block';
+            }
+        }
+    </script>
+
+    <!-- <script>
+        // 排他思想
+        var lis = document.querySelector('.tab_list').querySelectorAll('li');
+        var items = document.querySelectorAll('.item');
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].setAttribute('index', i);
+            lis[i].onclick = function () {
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = '';
+                    items[i].style.display = 'none';
+                }
+                this.className = 'current';
+                var index = this.getAttribute('index');
+                items[index].style.display = 'block';
+            }
+        }
+    </script> -->
+
+    <!-- 多个下拉导航栏 -->
+    <!-- <ul class='nav'>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li><a href="#">xxx</a></li>
+                <li><a href="#">xxx</a></li>
+                <li><a href="#">xxx</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li><a href="#">xxx</a></li>
+                <li><a href="#">xxx</a></li>
+                <li><a href="#">xxx</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li><a href="#">xxx</a></li>
+                <li><a href="#">xxx</a></li>
+                <li><a href="#">xxx</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">微博</a>
+            <ul>
+                <li><a href="#">xxx</a></li>
+                <li><a href="#">xxx</a></li>
+                <li><a href="#">xxx</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <script>
+        var nav = document.querySelector('.nav');
+        var lis = nav.children;
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].onmouseover = function () {
+                this.children[1].style.display = 'block';
+            }
+            lis[i].onmouseout = function () {
+                this.children[1].style.display = 'none';
+            }
+        }
+    </script> -->
+
+
+    <!-- 发布留言案例+删除留言板 -->
+    <!-- <textarea name="" id="" value='请输入内容' cols="30" rows="10"></textarea>
+    <button>发布</button>
+    <ul>
+
+    </ul>
+    <script>
+        var textarea = document.querySelector('textarea');
+        var btn = document.querySelector('button');
+        var ul = document.querySelector('ul');
+        btn.onclick = function () {
+            if (textarea.value == '') {
+                alert('输入的内容不能为空');
+            }
+            else {
+                var li = document.createElement('li');
+                ul.appendChild(li);
+                li.innerHTML = textarea.value + "<a href='javaScript:;'>删除</a>"
+                var as = document.querySelectorAll('a');
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function () {
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+
+
+            }
+        }
+
+
+    </script> -->
+
+    <!-- 动态表格 -->
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>科目</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        var dates = [
+            {
+                name: 'wzj',
+                score: 100,
+                course: 'JS'
+            },
+            {
+                name: 'sjc',
+                score: 90,
+                course: 'JS'
+            },
+            {
+                name: 'whd',
+                score: 80,
+                course: 'JS'
+            },
+            {
+                name: 'syc',
+                score: 59,
+                course: 'JS'
+            }
+        ];
+        var tbody = document.querySelector('tbody');
+        for (var i = 0; i < dates.length; i++) {
+            var tr = document.createElement('tr');
+            tbody.appendChild(tr);
+            for (var k in dates[i]) {
+                var td = document.createElement('td');
+                tr.appendChild(td);
+                td.innerHTML = dates[i][k];
+            }
+            var td = document.createElement('td');
+            tr.appendChild(td);
+            td.innerHTML = "<a href='javaScript:;'>删除</a>"
+
+        }
+        var as = document.querySelectorAll('a');
+        for (var i = 0; i < as.length; i++) {
+            as[i].onclick = function () {
+                tbody.removeChild(this.parentNode.parentNode);
+            }
+        }
+    </script> -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>科目</th>
+                <th>成绩</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        var dates = [
+            {
+                name: 'wzj',
+                score: 100,
+                course: 'JS'
+            },
+            {
+                name: 'sjc',
+                score: 90,
+                course: 'JS'
+            },
+            {
+                name: 'whd',
+                score: 80,
+                course: 'JS'
+            },
+            {
+                name: 'syc',
+                score: 59,
+                course: 'JS'
+            }
+        ];
+        var tbody = document.querySelector('tbody');
+        for (var i = 0; i < dates.length; i++) {
+            var tr = document.createElement('tr');
+            tbody.appendChild(tr);
+            for (var k in dates[i]) {
+                var td = document.createElement('td');
+                tr.appendChild(td);
+                td.innerHTML = dates[i][k];
+            }
+            var td = document.createElement('td');
+            tr.appendChild(td);
+            td.innerHTML = "<a href='javaScript:;'>删除</a>"
+        }
+        var as = document.querySelectorAll('a');
+        for (var i = 0; i < as.length; i++) {
+            as[i].onclick = function () {
+                tbody.removeChild(this.parentNode.parentNode);
+            }
+
+        }
+    </script>
+</body>
+
+</html>

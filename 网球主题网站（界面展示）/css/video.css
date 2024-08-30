@@ -1,0 +1,548 @@
+.banner {
+    height: 421px;
+    background-color: yellowgreen;
+}
+
+.banner .w {
+    height: 421px;
+    background: url(https://c.pxhere.com/photos/7f/9f/leica_holland_netherlands_court_rotterdam_atp_indoor_m-231177.jpg!d) no-repeat top center;
+}
+
+.subnav {
+    float: left;
+    height: 421px;
+    width: 192px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.subnav ul li {
+    height: 46px;
+    margin: 0px 20px;
+
+}
+
+.subnav ul li a {
+    font-size: 20px;
+    color: #f3f5f7;
+    line-height: 46px;
+}
+
+.subnav ul li a span {
+    float: right;
+
+}
+
+.subnav ul li a:hover {
+    color: orange;
+}
+
+.course {
+    float: right;
+    width: 277px;
+    height: 375px;
+    background-color: white;
+    margin-top: 20px;
+
+}
+
+.course h2 {
+    height: 65px;
+    font-size: 30px;
+    color: yellowgreen;
+    text-align: center;
+    line-height: 65px;
+    background-color: rgb(240, 240, 122);
+}
+
+.course .body {
+    height: 310px;
+    padding: 0 25px;
+}
+
+.body ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #CCC;
+
+}
+
+.body ul li h4 {
+    color: black;
+    font-size: 18px;
+
+}
+
+.body ul li p {
+    color: gray;
+    font-size: 12px;
+}
+
+.body .more {
+    display: block;
+    height: 40px;
+    border: 3px solid yellowgreen;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+}
+
+.goods {
+    height: 62px;
+    line-height: 62px;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.goods h4 {
+    float: left;
+    margin-left: 32px;
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+.goods .items {
+    float: left;
+}
+
+.goods .items ul {
+    margin-left: 30px;
+}
+
+.goods .items ul li {
+    float: left;
+}
+
+.goods .items ul li a {
+    padding: 0 30px;
+    font-size: 18px;
+    color: #050505;
+    border-left: 1px solid gray;
+}
+
+.goods .items ul li a:hover {
+    color: yellowgreen;
+}
+
+.goods .mod {
+    float: right;
+    margin-right: 32px;
+    font-size: 10px;
+    color: gray;
+}
+
+.goods .mod:hover {
+    color: yellowgreen;
+}
+
+.box {
+    margin-top: 10px;
+}
+
+.box-hd {
+    height: 45px;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: black;
+}
+
+.box-hd a {
+    float: right;
+    font-size: 10px;
+    color: #a5a5a5;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+/* 使得ul足够宽，从而盒子第五个盒子不换行 */
+.box-bd ul {
+    width: 1225px;
+
+}
+
+.box-bd ul li {
+    float: left;
+    position: relative;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(165, 211, 72);
+}
+
+/* 视频遮罩层制作开始 */
+
+.mask::before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 228px;
+    height: 155px;
+    background-size: 50% 50%;
+    background: rgba(0, 0, 0, .4) url(../images/播放logo.svg) no-repeat center;
+}
+
+.mask:hover::before {
+    display: block;
+}
+
+/* 视频遮罩层制作结束 */
+.box-bd ul li img {
+    width: 100%;
+    height: 155px;
+}
+
+.box-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+
+.box-bd .info {
+    margin: 20px 20px 20px 25px;
+    font-size: 12px;
+    color: #999;
+}
+
+.box-bd .info span {
+    margin-right: 10px;
+    color: orange;
+}
+
+
+.goods1 {
+    height: 62px;
+    line-height: 62px;
+    margin-top: 10px;
+
+}
+
+.goods1 h4 {
+    float: left;
+    margin-left: 32px;
+    font-size: 18px;
+    color: black;
+}
+
+.goods1 .items1 {
+    float: left;
+}
+
+.goods1 .items1 ul {
+    margin-left: 200px;
+}
+
+.goods1 .items1 ul li {
+    float: left;
+}
+
+.goods1 .items1 ul li a {
+    padding: 0 30px;
+    font-size: 14px;
+    color: gray;
+
+}
+
+.goods1 .items1 ul li a:hover {
+    color: yellowgreen;
+}
+
+.goods1 .all {
+    float: right;
+    margin-right: 32px;
+    font-size: 10px;
+    color: gray;
+}
+
+.goods1 .all:hover {
+    color: yellowgreen;
+}
+
+.box1 {
+    height: 392px;
+    margin-top: 10px;
+    background-color: pink;
+}
+
+.box1-sd {
+    float: left;
+    width: 230px;
+    height: 392px;
+    background-color: skyblue;
+
+}
+
+.box1-hd {
+    float: right;
+    width: 957px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.box1-bd {
+    float: right;
+    width: 957px;
+    height: 292px;
+    background-color: skyblue;
+}
+
+.box1-bd ul {
+    width: 980px;
+    margin-top: 20px;
+}
+
+.box1-bd ul li {
+    float: left;
+    position: relative;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(165, 211, 72)
+}
+
+.box1-bd ul li img {
+    width: 100%;
+    height: 155px;
+
+}
+
+.box1-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+.box1-bd .info {
+    margin: 20px 20px 20px 25px;
+    font-size: 12px;
+    color: #999;
+}
+
+.box1-bd .info span {
+    margin-right: 10px;
+    color: orange;
+}
+
+.goods2 {
+    height: 62px;
+    line-height: 62px;
+    margin-top: 10px;
+}
+
+.goods2 h4 {
+    float: left;
+    margin-left: 32px;
+    font-size: 18px;
+    color: black;
+
+}
+
+.goods2 .items2 {
+    float: left;
+}
+
+.goods2 .items2 ul {
+    margin-left: 200px;
+}
+
+.goods2 .items2 ul li {
+    float: left;
+}
+
+.goods2 .items2 ul li a {
+    padding: 0 30px;
+    font-size: 14px;
+    color: gray;
+}
+
+.goods2 .items2 ul li a:hover {
+    color: yellowgreen;
+}
+
+.goods2 .all {
+    float: right;
+    margin-right: 32px;
+    font-size: 10px;
+    color: gray;
+}
+
+.goods2 .all:hover {
+    color: yellowgreen;
+}
+
+.box2 {
+    height: 392px;
+    margin-top: 10px;
+    background-color: pink;
+}
+
+.box2-sd {
+    float: left;
+    width: 230px;
+    height: 392px;
+    background-color: skyblue;
+
+}
+
+.box2-hd {
+    float: right;
+    width: 957px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.box2-bd {
+    float: right;
+    width: 957px;
+    height: 292px;
+    background-color: skyblue;
+}
+
+.box2-bd ul {
+    width: 980px;
+    margin-top: 20px;
+}
+
+.box2-bd ul li {
+    float: left;
+    position: relative;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(165, 211, 72)
+}
+
+.box2-bd ul li img {
+    width: 100%;
+    height: 155px;
+}
+
+.box2-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+.box2-bd .info {
+    margin: 20px 20px 20px 25px;
+    font-size: 12px;
+    color: #999;
+}
+
+.box2-bd .info span {
+    margin-right: 10px;
+    color: orange;
+}
+
+.goods3 {
+    height: 62px;
+    line-height: 62px;
+    margin-top: 10px;
+}
+
+.goods3 h4 {
+    float: left;
+    margin-left: 32px;
+    font-size: 18px;
+    color: black;
+}
+
+.goods3 .items3 {
+    float: left;
+}
+
+.goods3 .items3 ul {
+    margin-left: 300px;
+}
+
+.goods3 .items3 ul li {
+    float: left;
+}
+
+.goods3 .items3 ul li a {
+    padding: 0 30px;
+    font-size: 14px;
+    color: gray;
+}
+
+.goods3 .items3 ul li a:hover {
+    color: yellowgreen;
+}
+
+.goods3 .all {
+    float: right;
+    margin-right: 32px;
+    font-size: 10px;
+    color: gray;
+
+}
+
+/* box3、box4与box样式一样 */
+/* goods样式相同 */
+/* footer模块 */
+.footer {
+    height: 415px;
+    background-color: rgb(79, 194, 79);
+}
+
+.footer {
+    padding-top: 35px;
+}
+
+.footer .copyright {
+    float: left;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0;
+}
+
+.copyright img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.copyright .app {
+    width: 118px;
+    height: 33px;
+    border: 3px solid greenyellow;
+    text-align: center;
+    line-height: 33px;
+    font-size: 16px;
+    color: green;
+}
+
+.footer .links {
+    float: right;
+}
+
+.footer .links dl {
+    float: left;
+    margin-left: 110px;
+}
+
+.footer .links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.footer .links dl dd a {
+    font-size: 12px;
+    color: #333;
+}

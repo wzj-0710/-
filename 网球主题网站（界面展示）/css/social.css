@@ -1,0 +1,139 @@
+/* 交友图片模块制作开始 */
+.banner {
+    height: 500px;
+    margin: 0 auto;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+
+/* 交友图片模块制作结束 */
+
+/* social模块网球用户交流制作开始 */
+.communicate {
+    height: 900px;
+    margin-top: 50px;
+}
+
+.contact-list {
+    float: left;
+    width: 300px;
+    height: 840px;
+    background-color: rgb(143, 218, 143);
+}
+
+.contact {
+    float: right;
+    width: 880px;
+    height: 880px;
+}
+
+/* social模块网球用户交流制作结束 */
+
+/* social模块好友栏制作开始 */
+.contact-list h3 {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: yellowgreen;
+}
+
+.contact-list ul li {
+    height: 50px;
+    width: 100%;
+    line-height: 30px;
+    padding: 10px 0px 10px 15px;
+
+}
+
+.contact-list ul li:hover {
+    background-color: rgb(219, 217, 217);
+}
+
+.contact-list ul li img {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.contact-list ul li span {
+    font-size: 14px;
+    color: black;
+    margin-left: 10px;
+}
+
+/* social模块好友模块制作结束 */
+
+/* social模块好友交流界面制作开始 */
+.contact h3 {
+    width: 880px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    background-color: yellowgreen;
+}
+
+.contact-show {
+    height: 600px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.contact-show ul li {
+    width: 300px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: pink;
+}
+
+.contact-send {
+    position: relative;
+    height: 240px;
+}
+
+.contact-send textarea {
+    resize: none;
+    outline: none;
+    border: 1px solid #ccc;
+    height: 240px;
+    width: 880px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contact-send .close {
+    position: absolute;
+    bottom: 10px;
+    right: 90px;
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+}
+
+.contact-send .send {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+}
+
+.contact-send button:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+
+/* social模块好友交流界面制作结束*/

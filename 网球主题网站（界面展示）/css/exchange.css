@@ -1,0 +1,290 @@
+/* 网球广场导航制作开始 */
+.allexchange {
+    height: 1950px;
+    margin: 0 auto;
+}
+
+.exchange {
+    height: 47px;
+    border-bottom: 2px solid green;
+}
+
+.exchange_ld {
+    float: left;
+    width: 900px;
+    height: 900px;
+}
+
+
+.navex_ld {
+    width: 900px;
+    height: 45px;
+}
+
+.navex_ld ul li {
+    float: left;
+}
+
+.navex_ld ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px;
+    font-size: 16px;
+}
+
+/* 网球广场导航制作结束 */
+
+/* 网球讨论区域模块start */
+.exchange_rd {
+    float: right;
+    width: 280px;
+    height: 900px;
+
+}
+
+.navex_rd {
+    width: 280px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.navex_rd h3 {
+    font-size: 16px;
+}
+
+.hotex {
+    margin-top: 20px;
+    width: 100%;
+    height: 190px;
+    border-bottom: 1px solid #ccc;
+}
+
+.hotexTitle {
+    height: 20px;
+    line-height: 20px;
+}
+
+
+.hotexuser img {
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    vertical-align: middle;
+}
+
+.hotexuser h3 {
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-top: 15px;
+    color: yellowgreen;
+}
+
+.hotexContent {
+    text-indent: 2em;
+    margin-top: 10px;
+    float: left;
+    font-size: 13px;
+    color: black;
+}
+
+.tags {
+    float: left;
+    width: 900px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.tags_hd {
+    float: left;
+    width: 300px;
+}
+
+.tags_hd span {
+    float: left;
+    padding: 6px 5px 6px 5px;
+    margin-right: 10px;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+.tags_hd .tag {
+    padding: 6px 5px 6px 5px;
+    margin-right: 10px;
+    background-color: #efefef;
+    font-size: 13px;
+}
+
+.tags_bd {
+    float: right;
+    height: 30px;
+    line-height: 50px;
+    margin-right: 50px;
+    width: 200px;
+}
+
+.tags_bd .estimate {
+    text-align: center;
+    padding: 10px 10px 0;
+    cursor: pointer;
+}
+
+.tags_bd .estimate1::before {
+    content: '\e900';
+    font-family: 'icomoon';
+}
+
+.tags_bd .estimate2::before {
+    content: '\e968';
+    font-family: 'icomoon';
+}
+
+/* 网球讨论区域模块end */
+
+/* 网球热搜模块制作开始 */
+.hot-search {
+    width: 280px;
+    height: 500px;
+}
+
+.hot-search-title {
+    height: 45px;
+    line-height: 45px;
+    color: #191c22;
+    padding: 0 20px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hot-search-title::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 13px;
+    height: 20px;
+    border-left: 3px solid yellowgreen;
+}
+
+.itemListA {
+    height: 900px;
+    width: 280px;
+    padding: 3px 0;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.itemListA .split-line {
+    height: 1px;
+    background-color: yellowgreen;
+}
+
+.itemListA .hot-search-item {
+    width: 280px;
+    height: 80px;
+    font-size: 14px;
+    color: #191c22;
+    overflow: hidden;
+    margin: 12px 0px;
+    padding: 10px 0px;
+}
+
+.itemListA .hot-index {
+    float: left;
+    width: 22px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.itemListA .hot-title {
+    float: left;
+    width: 258px;
+    font-weight: 400px;
+    line-height: 20px;
+    color: #213137;
+}
+
+/* 网球热搜模块制作结束 */
+/* 页数模块制作开始 */
+.pagination {
+    position: relative;
+    width: 953px;
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pagination .paging {
+    float: left;
+    margin-left: 270px;
+}
+
+.pagination .paging ul {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 auto;
+}
+
+.pagination ul li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    margin-left: -1px;
+}
+
+.pagination ul li:hover {
+    background-color: yellowgreen;
+}
+
+.pagination ul li:last-child {
+    width: 68px;
+    background: #eaeaea;
+    margin-left: 10px;
+}
+
+.pagination ul li:last-child:hover {
+    background-color: yellowgreen;
+}
+
+
+.pagination .p-skip {
+    float: right;
+    line-height: 28px;
+    font-size: 12px;
+    margin-left: 15px;
+    color: #666;
+}
+
+.p-skip em {
+    margin-left: 7px;
+}
+
+.p-skip .input-txt {
+    width: 50px;
+    height: 25px;
+    border: 1px solid #ccc;
+}
+
+.pagination .btn {
+    position: absolute;
+    right: 190px;
+    top: 7px;
+    width: 60px;
+    height: 20px;
+    background: #eaeaea;
+}
+
+.pagination .btn:hover {
+    background-color: yellowgreen;
+}
+
+/* 页数模块制作结束 */

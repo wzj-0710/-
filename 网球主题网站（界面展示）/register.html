@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入我们css初始化文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入我们注册页面专有css文件 -->
+    <link rel="stylesheet" href="css/register.css">
+    <title>tennis-帕沃网球俱乐部-注册页面</title>
+</head>
+
+<body>
+    <div class="w">
+        <!-- 注册页面头部模块制作start -->
+        <header>
+            <div class="logo">
+                <a href="index+.html"><img src="images/logo.jpg" alt=""></a>
+            </div>
+            <span class="back"><a href="index.html">返回首页</a></span>
+        </header>
+        <!-- 注册页面头部模块制作end -->
+
+        <!-- 注册页面注册主体模块制作start -->
+        <div class="registerarea">
+            <h3>注册新用户
+                <div class="login">已有账号，去<a href="#">登入</a></div>
+            </h3>
+            <div class="reg_form">
+                <form action="" autocapitalize="on">
+                    <ul>
+                        <li><label for="">用户名：</label> <input type="text" class="inp" placeholder="请输入用户名"
+                                autofocus="autofocus"> <span class="success"><i class="success_icon"></i>
+                                用户名输入正确</span></li>
+                        <li><label for="">上传头像：</label> <img src="images/头像标志2.jpg" width="25"> <input type="file"
+                                class="file">
+                            <span class="success"><i class="success_icon"></i>
+                                上传头像成功</span>
+                        </li>
+                        <li><label for="">手机号：</label> <input type="text" class="inp" placeholder="请输入手机号"> <span
+                                class="error"><i class="error_icon"></i>
+                                手机号码格式不正确</span></li>
+                        <li><label for="">短信验证码：</label> <input type="text" class="inp" placeholder="请输入短信验证码"> <span
+                                class="success"><i class="success_icon"></i>
+                                验证码输入正确</span></li>
+                        <li><label for="">登入密码：</label> <input type="password" class="inp" placeholder="请输入密码">
+                            <span class='nothing'>请输入密码</span>
+                        </li>
+                        <script>
+                            var input = document.querySelector('input');
+                            var nothing = document.querySelector('.nothing');
+                            input.onblur = function () {
+                                if (this.value.length < 6 || this.value.length > 16) {
+                                    nothing.className = 'nothing wrong';
+                                    nothing.innerHTML = '您输入的位数错误，要求6-16位之间';
+                                } else {
+                                    nothing.className = 'nothing right';
+                                    nothing.innerHTML = '您输入的格式正确';
+                                }
+                            }
+                        </script>
+                        <!-- 密码程度模块制作start -->
+                        <li class="safe">安全程度<em class="weak">弱</em><em class="middle">中</em><em class="strong">强</em>
+                        </li>
+                        <!-- 密码程度模块制作end -->
+                        <li><label for="">确认密码：</label> <input type="password" class="inp" placeholder="请再次输入密码"> <span
+                                class="error"><i class="error_icon"></i>
+                                密码不正确</span></li>
+                        <li><label for="">E-mail：</label> <input type="email" class="inp" placeholder="请输入邮箱"> <span
+                                class="success"><i class="success_icon"></i>
+                                邮箱输入正确</span></li>
+                        <li><label for="">性别：</label>
+                            <input type="radio" name="sex" id="nan">
+                            <img src="images/man.jpg">男
+                            <input type="radio" name="sex" id="nv">
+                            <img src="images/women.jpg">女
+                        </li>
+                        <li><label for="">网球明星：</label>
+                            <input type="text" list="edulist" class="edulist" placeholder="请输入网球明星或选择网球明星">
+                            <datalist id="edulist">
+                                <option label="纳芙拉蒂诺娃" value="纳芙拉蒂诺娃"></option>
+                                <option label="格拉芙" value="格拉芙"></option>
+                                <option label="桑普拉斯" value="桑普拉斯"></option>
+                                <option label="费德勒" value="费德勒"></option>
+                                <option label="辛吉斯" value="辛吉斯"></option>
+                                <option label="比约·伯格" value="比约·伯格"></option>
+                                <option label="塞莲娜·威廉姆斯" value="塞莲娜·威廉姆斯"></option>
+                                <option label="纳达尔" value="纳达尔"></option>
+                                <option label="海宁" value="海宁"></option>
+                                <option label="阿加西" value="阿加西"></option>
+                            </datalist>
+                        </li>
+                        <li><label for="">自我介绍:</label>
+                            <textarea>个人介绍 </textarea>
+                        </li>
+                        <li class="agree"><input type="checkbox" name="" id="">同意协议并注册
+                            <a href="#">《知晓用户协议》</a>
+                        </li>
+                        <li><input type="submit" value="提交注册" class="btn"></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+        <!-- 注册页面注册主体模块制作end -->
+
+        <!-- 注册页面结尾注册模块start -->
+        <footer>
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a> | <a href="#">联系我们</a> | 联系客服 | 商家入驻 | 营销中心 | xxxxxx | 友情链接 | 销售联盟 | 网球社区 |
+                    xxxxxx | English Site | Contact U
+                </div>
+                <div class="copyright">
+                    地址：xxxxxxx 邮编：xxxxxx 电话：xxx-xxx-xxxx 传真：xxx-xxxxxxxx 邮箱: xxxxxxxxxx.com <br>
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                </div>
+            </div>
+        </footer>
+        <!-- 注册页面结尾注册模块end -->
+
+    </div>
+</body>
+
+</html>

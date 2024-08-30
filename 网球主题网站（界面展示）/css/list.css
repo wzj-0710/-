@@ -1,0 +1,497 @@
+/* list专有css */
+.banner {
+    margin-top: 10px;
+}
+
+.banner img {
+    height: 150px;
+    width: 1200px;
+}
+
+.sort {
+    height: 30px;
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.sort span {
+    font-size: 12px;
+    color: black;
+}
+
+.sort span select {
+    border: 1px solid yellowgreen;
+    width: 50px;
+    height: 20px;
+}
+
+.selecttab {
+    height: 240px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+.selectlist {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+.selectlist .select1 {
+    float: left;
+    height: 59px;
+    width: 96px;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    text-indent: 22px;
+    background-color: rgb(235, 231, 231);
+}
+
+.selectlist .select2 {
+    float: left;
+}
+
+.select2 ul {
+    margin-left: 30px;
+}
+
+.select2 ul li {
+    float: left;
+    margin-right: 37px;
+}
+
+.select2 ul li input {
+    width: 60px;
+    outline-style: none;
+    border: 1px solid #ccc;
+}
+
+.select2 ul li button {
+    width: 40px;
+    outline-style: none;
+    border: 1px solid #ccc;
+}
+
+.spread {
+    float: right;
+    margin-right: 30px;
+}
+
+/* sortinner制作模块开始 */
+.sortinner {
+    height: 28px;
+    line-height: 28px;
+    margin-top: 20px;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.sortNav {
+    float: left;
+}
+
+.sortNav ul li:first-child {
+    background-color: yellowgreen;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: 0;
+    font-size: 12px;
+}
+
+/* 
+.sortNav ul li a:first-child:hover {
+    color: white;
+} */
+
+.sortNav ul li {
+    float: left;
+    width: 70px;
+    height: 28px;
+    font-size: 12px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+.sortNav ul li a:after {
+    font-family: 'icommon';
+    content: '↕';
+    margin-left: 5px;
+}
+
+.otherSort {
+    float: left;
+    margin-left: 20px;
+}
+
+.otherSort span {
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 8px 6px 0 0;
+    background: url(../images/京东精灵图.png) no-repeat -99px -442px;
+}
+
+.sortRight {
+    float: right;
+}
+
+.styleSwitch {
+    float: left;
+}
+
+.styleSwitch ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.styleSwitch ul .big span {
+    float: left;
+    width: 21px;
+    height: 21px;
+    margin: 4px 6px 0 0;
+    background: url(../images/京东精灵图.png) no-repeat -90px -460px;
+}
+
+.styleSwitch .big i {
+    float: left;
+}
+
+.styleSwitch .liston span {
+    float: left;
+    width: 21px;
+    margin: 4px 6px 0 0;
+    height: 21px;
+    background: url(../images/京东精灵图.png) no-repeat -113px -460px;
+}
+
+.styleSwitch .liston i {
+    float: left;
+}
+
+.topPage {
+    float: right;
+}
+
+.topPage .fp-text {
+    float: left;
+    font-family: Arial;
+    color: #333;
+}
+
+.topPage a {
+    float: left;
+    width: 21px;
+    height: 21px;
+    text-indent: -999px;
+    overflow: hidden;
+
+}
+
+.topPage .prePage {
+    background: url(../images/京东精灵图.png) no-repeat -265px -460px;
+    margin-right: 3px;
+    margin-top: 4px;
+}
+
+.topPage .nextPage {
+    background: url(../images/京东精灵图.png) no-repeat -288px -460px;
+    margin-top: 4px;
+}
+
+/* sortinner制作模块结束 */
+
+/* booklist模块制作开始 */
+.booklist {
+    margin-top: 15px;
+}
+
+.booklist ul li {
+    height: 249px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.booklist ul li .cover {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.booklist ul li .cover img {
+    width: 200px;
+    height: 200px;
+}
+
+.booklist ul li .infor {
+    float: left;
+    width: 672px;
+    height: 239px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.infor .name h2 {
+    height: 18px;
+    line-height: 16px;
+    overflow: hidden;
+    font-weight: normal;
+}
+
+.infor .name h2 a {
+    color: yellowgreen;
+    font-size: 14px;
+}
+
+.infor .otherinfo {
+    margin-top: 6px;
+    height: 26px;
+    line-height: 26px;
+    color: #666;
+}
+
+.infor .priceWrap {
+    height: 30px;
+    line-height: 30px;
+}
+
+.priceWrap span .sellPrice {
+    font-size: 18px;
+    color: yellowgreen;
+    margin-right: 10px;
+    font-family: "Microsoft YaHei";
+}
+
+.priceWrap span .discount {
+    margin-right: 15px;
+    font-family: "Microsoft YaHei";
+}
+
+.priceWrap span .priceTit {
+    font-size: 12px;
+    margin-top: 2px;
+    margin-right: 2px;
+    color: #999;
+    font-family: "Microsoft YaHei";
+}
+
+.priceWrap del {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    margin-top: 1px;
+    color: #999;
+}
+
+.activeIcon span {
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    padding: 0 6px;
+    background-color: red;
+    border-radius: 3px;
+}
+
+.infor .recolagu {
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.infor .oprateButton {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.oprateButton .buyButton {
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 30px;
+    margin-right: 10px;
+    color: white;
+    background: url(../images/京东精灵图.png) no-repeat -164px -452px;
+    border-radius: 6px;
+
+}
+
+.oprateButton .collectButton {
+    float: left;
+    width: 48px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+/* booklist模块制作结束 */
+
+/* 页数模块制作开始 */
+.pagination {
+    position: relative;
+    width: 953px;
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pagination .paging {
+    float: left;
+    margin-left: 270px;
+}
+
+.pagination .paging ul {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 auto;
+}
+
+.pagination ul li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    margin-left: -1px;
+}
+
+.pagination ul li:hover {
+    background-color: yellowgreen;
+}
+
+.pagination ul li:last-child {
+    width: 68px;
+    background: #eaeaea;
+    margin-left: 10px;
+}
+
+.pagination ul li:last-child:hover {
+    background-color: yellowgreen;
+}
+
+
+.pagination .p-skip {
+    float: right;
+    line-height: 28px;
+    font-size: 12px;
+    margin-left: 15px;
+    color: #666;
+}
+
+.p-skip em {
+    margin-left: 7px;
+}
+
+.p-skip .input-txt {
+    width: 50px;
+    height: 25px;
+    border: 1px solid #ccc;
+}
+
+.pagination .btn {
+    position: absolute;
+    right: 190px;
+    top: 7px;
+    width: 60px;
+    height: 20px;
+    background: #eaeaea;
+}
+
+.pagination .btn:hover {
+    background-color: yellowgreen;
+}
+
+/* 页数模块制作结束 */
+
+/* 本站常销模块制作开始 */
+.siteHotTitle {
+    height: 47px;
+    line-height: 47px;
+    background-color: rgb(150, 230, 150);
+    border-bottom: 3px solid yellowgreen;
+    margin-top: 15px;
+}
+
+.siteHotTitle h2 {
+    float: left;
+    text-indent: 18px;
+    font-size: 22px;
+    font-weight: normal;
+    color: white;
+}
+
+.siteHotCon {
+    height: 300px;
+    margin-top: 10px;
+}
+
+.siteHotCon ul li {
+    float: left;
+    height: 291px;
+    width: 186px;
+    border: 2px solid #fff;
+    display: inline;
+    margin: 10px 6px 0;
+}
+
+.siteHotCon ul li .bookCover {
+    height: 158px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bookCover img {
+    width: 186px;
+    height: 158px;
+}
+
+.bookName {
+    width: 186px;
+    height: 18px;
+    padding: 0 20px;
+    margin-top: 15px;
+    line-height: 18px;
+}
+
+.bookAuthor {
+    height: 18px;
+    line-height: 18px;
+    margin-top: 2px;
+    color: #666;
+    padding: 0 20px;
+}
+
+.siteHotCon ul li .priceWrap {
+    height: 16px;
+    line-height: 16px;
+    margin-top: 6px;
+    padding: 0 20px;
+
+}
+
+.siteHotCon ul li .priceWrap span {
+    font-size: 16px;
+    color: red;
+}
+
+.siteHotCon ul li .priceWrap del {
+    font-size: 10px;
+    color: #999;
+    margin-left: 5px;
+}
+
+.siteHotCon .buyButton {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 50px;
+    margin-top: 8px;
+    background-color: yellowgreen;
+}
+
+/* 本站常销模块制作结束 */

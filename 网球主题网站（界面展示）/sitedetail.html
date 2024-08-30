@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>tennis-帕沃网球俱乐部-场地预约详情页面</title>
+    <meta name="description" content="">
+    <!-- 关键字 -->
+    <meta name="keywords" content="俱乐部平台，结交网球好友，预定场地，">
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入我们css初始化文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入我们css交集文件 -->
+    <link rel="stylesheet" href="css/sitedetail.css">
+    <!-- 引入我们sitedetail专属css文件 -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+    <!-- 快捷栏模块制作start -->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>二手书平台欢迎你&nbsp;&nbsp;</li>
+                    <li><a href="#">请登入&nbsp;</a><a href="register.html" class="style_yellow">免费注册</a></li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="#">我的订单</a> </li>
+                    <li></li>
+                    <li><a href="#">购物车</a></li>
+                    <li></li>
+                    <li><a href="#">网站支持</a></li>
+                    <li></li>
+                    <li class="arrow-icon"> <a href="#">卖家中心</a></li>
+                    <li></li>
+                    <li class="arrow-icon"><a href="#">联系客服</a></li>
+                    <li></li>
+                    <li><a href="#">收货地址</a> </li>
+                    <li></li>
+                    <li class="arrow-icon1"><a href="#">网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 快捷栏模块end -->
+
+    <!-- header头部模块制作start -->
+    <header class="header w">
+        <!-- 标志制作start -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" title="tennis"></a>
+            <!-- 提权，告诉搜索引擎很重要 -->
+            <h1>
+                <a href="index.html" title="网球平台">网球平台</a>
+            </h1>
+            <!-- 提权结束 -->
+        </div>
+        <!-- 标志制作结束 -->
+        <!-- 搜索模块start -->
+        <div class="search">
+            <input type="serach" placeholder="请输入你想要的书籍名称">
+            <button>搜索</button>
+
+        </div>
+
+        <!-- 搜索模块end -->
+        <!-- 热门搜索词模块start -->
+        <div class="hotwords">
+            <a href="#" class="style_yellow">促销书本</a>
+            <a href="#">团购书本</a>
+            <a href="#">教材</a>
+            <a href="#">学霸笔记</a>
+            <a href="#">漫画书籍</a>
+            <a href="#">英语四级</a>
+            <a href="#">计算机二级</a>
+
+        </div>
+        <!-- 热门搜索模块end -->
+        <!-- 购物车模块start -->
+        <div class="shopcar">
+            <a href="#">我的购物车</a>
+            <div class="count">12</div>
+        </div>
+        <!-- 购物车模块end -->
+    </header>
+    <!-- header头部模块制作end -->
+
+    <!-- 场地详细页制作模块start -->
+    <header class="detail-hd w">
+        <div class="sitebaseinfor">
+            <h3 class="sitename"> 网球场馆名字</h3>
+            <dl>
+                <dt>场馆地址：</dt>
+                <dd class="siteinfor">xxxxxxxx</dd>
+                <dt>场馆电话:</dt>
+                <dd class="siteinfor">xxx-xxx-xxxx</dd>
+                <dt>场馆价格：</dt>
+                <dd class="siteprice">
+                    <span class="spantext1">￥</span>
+                    <span class="spanprice1">30</span>
+                    <span class="spantext2">起</span>
+                </dd>
+                <dt>温馨提示:</dt>
+                <dd class="sitenotice">
+                    因疫情防控需要，入场请佩戴口罩，并配合场馆测量体温，登记身份信息等工作。
+                </dd>
+            </dl>
+            <div class="sitecomment">
+                <div class="comment">
+                    <img src="http://www.quyundong.com/gosport/index/images/love.png" class="love" alt="">
+                    <img src="http://www.quyundong.com/gosport/index/images/love.png" class="love" alt="">
+                    <img src="http://www.quyundong.com/gosport/index/images/love.png" class="love" alt="">
+                    <img src="http://www.quyundong.com/gosport/index/images/love.png" class="love" alt="">
+                    <img src="http://www.quyundong.com/gosport/index/images/love.png" class="love" alt=""><br>
+                    <div class="comment-num">(1评论)</div>
+                    <div class="comment-score">10.0分</div>
+                </div>
+            </div>
+        </div>
+        <!-- 场地定位地图制作模块start -->
+        <!-- 引用百度地图 -->
+        <div class="sitelocation" id="dituContent">地理位置
+            <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true">
+            </script>
+            <!-- 引用百度地图完成 -->
+        </div>
+        <!-- 场地定位地图制作模块end -->
+    </header>
+    <!-- 场地详细页制作模块end -->
+
+    <!-- 场地功能导航模块start -->
+    <nav class="sitenav w">
+        <ul>
+            <li><a href="#">场地预定</a></li>
+            <li><a href="#">场馆介绍</a></li>
+        </ul>
+    </nav>
+    <!-- 场地功能导航模块end -->
+    <!-- 场地日期模块制作start -->
+    <div class="sitedate w">
+        <span>日期:</span>
+        <ul>
+            <li><a href="#">4月25日(周日)</a></li>
+            <li><a href="#">4月26日(周一)</a></li>
+            <li><a href="#">4月27日(周二)</a></li>
+            <li><a href="#">4月28日(周三)</a></li>
+            <li><a href="#">4月29日(周四)</a></li>
+            <li><a href="#">4月30日(周五)</a></li>
+            <li><a href="#">5月1日(周六)</a></li>
+        </ul>
+    </div>
+    <!-- 场地日期模块制作end -->
+    <!-- 场地日期选择模块制作start -->
+    <div class="w siteseat">
+        <!-- 场地时间表模块制作start -->
+        <div class="left-time-site">
+            <ul>
+                <li>9:00</li>
+                <li>10:00</li>
+                <li>11:00</li>
+                <li>12:00</li>
+                <li>13:00</li>
+                <li>14:00</li>
+                <li>15:00</li>
+                <li>16:00</li>
+                <li>17:00</li>
+                <li>18:00</li>
+                <li>19:00</li>
+                <li>20:00</li>
+                <li>21:00</li>
+                <li>22:00</li>
+            </ul>
+        </div>
+        <!-- 场地时间表模块制作end -->
+        <div class="mainsitebook">
+            <!-- 选择场地表制作开始 -->
+            <div class="mainbookdetail">
+                <table class=main-table>
+                    <thead>
+                        <tr>
+                            <th class="heads">
+                                <span>4号标准</span>
+                            </th>
+                            <th class="heads">
+                                <span>5号标准</span>
+                            </th>
+                            <th class="heads">
+                                <span>6号标准</span>
+                            </th>
+                            <th class="heads">
+                                <span>7号标准</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="main-table-body">
+                        <tr class="rows">
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                            <td class=single title="该场次已经出售"><span class="can-not-order"></span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="4号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="5号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="6号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="7号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="4号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="5号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="6号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="7号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="4号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="5号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="6号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="7号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                        </tr>
+                        <tr class="rows">
+                            <td class=single title="4号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="5号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="6号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                            <td class=single title="7号标准 16:00-17:00 80元"><span class="can-order">￥80</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 选择场地表制作end -->
+            <!-- 右侧场地确认制作开始 -->
+            <div class="rightorderplan">
+                <div class="title">
+                    <ul>
+                        <li><span class="can-order"></span></li>
+                        <li>可预定</li>
+                        <li> <span class="can-not-order"></span></li>
+                        <li>不可预定</li>
+                        <li><span class="chosen"></span>
+                        </li>
+                        <li>当前选定</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>项目：</dt>
+                        <dd>网球</dd>
+                        <dt>日期：</dt>
+                        <dd>2021年4月26日(周一)</dd>
+                        <dt>场次：</dt>
+                    </dl>
+                    <ul class="selected-book">
+                        <li>请点击左侧列表选择场次</li>
+                    </ul>
+                    <div class="court-display">已选择<span>n</span> 场地</div>
+                    <div class="price-display">
+                        共计
+                        <span class="money">n元</span>
+                        <span class="extra">含手续费</span>
+                    </div>
+                    <a href="#" class="submit-button">提交订单</a>
+                </div>
+
+            </div>
+            <!-- 右侧场地确认制作结束 -->
+        </div>
+    </div>
+    <!-- 场地日期选择模块制作end -->
+    <!-- 场馆介绍栏目制作开始 -->
+    <div class="siteintroduce w">
+        <ul>
+            <li>场馆介绍</li>
+        </ul>
+    </div>
+
+
+    <!-- 场馆介绍栏目制作结束 -->
+    <!-- 场馆介绍表制作开始 -->
+    <div class="sitetables w">
+        <table class="table1">
+            <tr class="r1">
+                <td style="text-indent: 2em;" colspan="2">交通信息</td>
+            </tr>
+            <tr>
+                <td class="line1">地铁</td>
+                <td> xxx地铁站</td>
+            </tr>
+        </table>
+        <table class="table2">
+            <tr class="r1">
+                <td style="text-indent: 2em;" colspan="2">场地设施</td>
+            </tr>
+            <tr>
+                <td class="line1">地板</td>
+                <td> 塑胶垫板</td>
+            </tr>
+            <tr>
+                <td class="line1">休息区</td>
+                <td> 风扇、VIP室</td>
+            </tr>
+        </table>
+        <table class="table3">
+            <tr class="r1">
+                <td style="text-indent: 2em;" colspan="2">场馆服务</td>
+            </tr>
+            <tr>
+                <td class="line1">更多服务</td>
+                <td> 会员卡、专业培训、暑假夏令营</td>
+            </tr>
+            <tr>
+                <td class="line1">场馆卖品</td>
+                <td> 饮料、球拍</td>
+            </tr>
+            <tr>
+                <td class="line1">洗浴设施</td>
+                <td> 更衣室、提供洗浴、热水供应</td>
+            </tr>
+            <tr>
+                <td class="line1">器材租借</td>
+                <td> 储物柜、球拍</td>
+            </tr>
+        </table>
+    </div>
+    <!-- 场馆介绍表制作结束 -->
+    <!-- 球馆照片区域制作开始 -->
+    <div class="siteimages w">
+        <ul class="left-image">
+            <li><img src="https://th.bing.com/th/id/Rd26810110ddb93235d0b363653c3da51?rik=6K1gvbkzVA2Rgg&riu=http%3a%2f%2fimages.cpooo.com%2ffiles%2f201003%2fproduct%2f136%2f1269936058.jpg&ehk=r55xXZpnor3nmtonLrO6YzrhwCJHCW3Vhd92gw21H1c%3d&risl=&pid=ImgRaw"
+                    alt=""></li>
+        </ul>
+        <ul class="right-image">
+            <li><img src="https://th.bing.com/th/id/Ra6675f9d889374a0d08178d6b97e3bc0?rik=jD4teh%2fppKHD7Q&riu=http%3a%2f%2fwww.tianjiaotiyu.com%2fuploadfile%2f2019%2f1219%2f20191219113804892.jpg&ehk=R4IPDe5dGx%2fN9iiZwD%2b5zNu2lhHWkw0i4bLwGZZB3eo%3d&risl=&pid=ImgRaw"
+                    alt=""></li>
+            <li><img src="https://th.bing.com/th/id/R43188ec19cc533416e92618df176c9d7?rik=Qa02H1CpjprRmg&riu=http%3a%2f%2fp9.qhmsg.com%2ft01e722823b8ef2b666.jpg&ehk=Guh1SXkld2atvQK2FuO7TEenOvm6JOfV%2b7WoJtd7zx8%3d&risl=&pid=ImgRaw"
+                    alt=""></li>
+            <li><img src="https://th.bing.com/th/id/R5021c1a1644f1849bfcd9604762b8f0a?rik=Ljl28lqBnwOfMQ&riu=http%3a%2f%2fmmbiz.qpic.cn%2fmmbiz_png%2fEC91Xktxsypmca7TBkowMYCH0QxW6Myfy8MOPPRB8QElLJib8Zf2O6WyI5YvbcUwjCr1xQdWGoWicYkMUGFRHnsQ%2f640%3fwx_fmt%3dpng&ehk=qfXHVT1zJ90y0YCdeD5Pwj097dWeZnFOEv%2fk5DqEOHY%3d&risl=&pid=ImgRaw"
+                    alt=""></li>
+        </ul>
+    </div>
+
+    <!-- 球馆照片区域制作结束 -->
+    <!-- 底部模块制作start -->
+    <footer class="footer ">
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <div class="img1"></div>
+                        <div class="service_text">
+                            <h4>质量保障</h4>
+                            <p>提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2"></div>
+                        <div class="service_text">
+                            <h4>极速物流</h4>
+                            <p>极速物流，极速送达</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img3"></div>
+                        <div class="service_text">
+                            <h4>无忧售后</h4>
+                            <p>3天无理由退货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img4"></div>
+                        <div class="service_text">
+                            <h4>特色服务</h4>
+                            <p>私人预定书籍</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img5"></div>
+                        <div class="service_text">
+                            <h4>帮助中心</h4>
+                            <p>你遇到的问题</p>
+                        </div>
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">购买装备流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">用户意见</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="#">上门自提</a></dd>
+                    <dd><a href="#">211限时达</a></dd>
+                    <dd><a href="#">配送服务查询</a></dd>
+                    <dd><a href="#">配送服务查询</a></dd>
+                    <dd><a href="#">配送费收取标准</a></dd>
+                    <dd><a href="#">配送方位查询</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">在线支付</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">价格保护</a></dd>
+                    <dd><a href="#">价格制定准则</a></dd>
+                    <dd><a href="#">退换货</a></dd>
+                    <dd><a href="#">取消订单</a></dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="#">站点志愿者</a></dd>
+                    <dd><a href="#">参加志愿者工作时长</a></dd>
+                    <dd><a href="#">装备优惠券</a></dd>
+                    <dd><a href="#">网球论坛</a></dd>
+                </dl>
+                <dl>
+                    <dt>志愿者报名</dt>
+                    <dd><img src="images/志愿者二维码.png" alt=""></dd>
+                    <dd>志愿者客户端</dd>
+                </dl>
+            </div>
+
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a> | <a href="#">联系我们</a> | 联系客服 | 商家入驻 | 营销中心 | xxxxxx | 友情链接 | 销售联盟 | 网球社区 |
+                    xxxxxx | English Site | Contact U
+                </div>
+                <div class="copyright1">
+                    地址：xxxxxxx 邮编：xxxxxx 电话：xxx-xxx-xxxx 传真：xxx-xxxxxxxx 邮箱: xxxxxxxxxx.com <br>
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                </div>
+            </div>
+    </footer>
+    <!-- 底部模块制作end -->
+</body>
+<!-- 百度地图引入 -->
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(121.462767, 31.28783);//定义一个中心点坐标
+        map.centerAndZoom(point, 17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{ title: "我的标记", content: "我的备注", point: "121.462823|31.285047", isOpen: 0, icon: { w: 23, h: 25, l: 46, t: 21, x: 9, lb: 12 } }
+    ];
+    //创建marker
+    function addMarker() {
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, { icon: iconImg });
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, { "offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20) });
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+
+            (function () {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function () {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function () {
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close", function () {
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click", function () {
+                    _marker.openInfoWindow(_iw);
+                })
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i) {
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json) {
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), { imageOffset: new BMap.Size(-json.l, -json.t), infoWindowOffset: new BMap.Size(json.lb + 5, 1), offset: new BMap.Size(json.x, json.h) })
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+<!-- 百度地图引入结束 -->
+
+</html>
