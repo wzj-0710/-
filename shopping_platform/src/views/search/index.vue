@@ -4,7 +4,7 @@
 
     <van-search v-model="search" show-action placeholder="请输入搜索关键词" clearable>
       <template #action>
-        <div>搜索</div>
+        <div @click = "goSearch(search)">搜索</div>
       </template>
     </van-search>
 
@@ -12,22 +12,50 @@
     <div class="search-history">
       <div class="title">
         <span>最近搜索</span>
-        <van-icon name="delete-o" size="16" />
+        <van-icon @click ="clear" name="delete-o" size="16" />
       </div>
       <div class="list">
-        <div v-for="item in history" :key = "item" class="list-item" @click="$router.push('/searchlist')">{{ item }}</div>
+        <div v-for="item in history" :key = "item" class="list-item" @click="goSearch(item)">{{ item }}</div>
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
+import { getHistoryList, setHistoryList } from '@/utils/storage'
+
 export default {
   name: 'SearchIndex',
   data () {
     return {
       search: '',
-      history: ['手机', '空调', '白酒', '电视']
+      history: getHistoryList()
+    }
+  },
+  methods: {
+    // key是搜索框中的搜索词
+    goSearch (key) {
+      if (!key) {
+        if (this.history && this.history.length > 0) {
+          key = this.history[0] // 使用历史记录中的第一个关键词
+        } else {
+          this.$toast('请输入搜索内容') // 如果历史记录也为空，提示用户输入内容
+          return
+        }
+      }
+      const index = this.history.indexOf(key)
+      if (index !== -1) this.history.splice(index, 1)
+      this.history.unshift(key)
+      // 将history数据存储到本地
+      setHistoryList(this.history)
+      this.$router.push(`/searchlist?search=${key}`)
+    },
+    // 清空历史
+    clear () {
+      this.history = []
+      setHistoryList([])
+      this.$toast.success('清空历史成功')
     }
   }
 }

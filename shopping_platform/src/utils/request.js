@@ -1,10 +1,13 @@
 import axios from 'axios'
 import { Toast } from 'vant'
+import store from '@/store'
+
 const instance = axios.create({
   baseURL: 'http://smart-shop.itheima.net/index.php?s=/api',
   timeout: 5000,
   headers: {
-    platform: 'H5'
+    // 添加 platform 到请求头
+    platform: 'h5'
   }
 })
 
@@ -17,6 +20,13 @@ instance.interceptors.request.use(function (config) {
     loadingType: 'spinner', // 配置loading图标
     duration: 0 // 不会自动消失
   })
+
+  // 只要有token，就在请求时携带，便于请求需要授权的接口
+  const token = store.getters.token
+  if (token) {
+    config.headers['Access-Token'] = token
+    config.headers.platform = 'H5'
+  }
   return config
 }, function (error) {
   return Promise.reject(error)

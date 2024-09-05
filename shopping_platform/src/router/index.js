@@ -4,14 +4,16 @@ import Login from '@/views/login'
 import Layout from '@/views/layout'
 import Search from '@/views/search'
 import SearchList from '@/views/search/list.vue'
-import ProDetail from '@/views/prodetail'
-import Pay from '@/views/pay'
-import MyOrder from '@/views/myorder'
 import Home from '@/views/layout/home.vue'
 import Category from '@/views/layout/category.vue'
 import Cart from '@/views/layout/cart.vue'
 import User from '@/views/layout/user.vue'
 import store from '@/store'
+
+// 懒路由加载，不会一上来就将这些组件加载，而是访问到对应的路由才会解析这个路由对应的组件
+const ProDetail = () => import('@/views/prodetail')
+const Pay = () => import('@/views/pay')
+const MyOrder = () => import('@/views/myorder')
 
 Vue.use(VueRouter)
 
@@ -34,7 +36,7 @@ const router = new VueRouter({
     // 动态路由传参，确定是哪个商品，路由参数中携带id
     { path: '/prodetail/:id', component: ProDetail },
     { path: '/pay', component: Pay },
-    { path: 'myorder', component: MyOrder }
+    { path: '/myorder', component: MyOrder }
   ]
 })
 
